@@ -25,3 +25,9 @@ generics
 Property Observers
 lazy Property
 Type Levels
+
+22/05/2024
+Type Check & Casting
+Any Object & Any
+Delegates
+Class Extensions
