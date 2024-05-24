@@ -26,8 +26,22 @@ Property Observers
 lazy Property
 Type Levels
 
+
 22/05/2024
 Type Check & Casting
 Any Object & Any
 Delegates
 Class Extensions
+
+
+23/05/2024
+Codable and DeCodable
+Notifications
+Generic
+
+
+24/05/2024
+Identical Operator
+Nil Coalescing Operator
+Range Operator
+User Messages(Alerts)
