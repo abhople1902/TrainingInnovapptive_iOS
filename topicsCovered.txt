@@ -45,3 +45,7 @@ Identical Operator
 Nil Coalescing Operator
 Range Operator
 User Messages(Alerts)
+
+27/05/2024
+Error Handling
+Design Patterns
