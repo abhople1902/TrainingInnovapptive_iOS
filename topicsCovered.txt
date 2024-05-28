@@ -49,3 +49,7 @@ User Messages(Alerts)
 27/05/2024
 Error Handling
 Design Patterns
+
+28/05/2024
+View Controller
+Delegate methods
