@@ -53,3 +53,12 @@ Design Patterns
 28/05/2024
 View Controller
 Delegate methods
+
+29/05/2024
+.xib files and views
+segues
+data passing and navigation
+
+30/05/2024
+TableViews
+CollectionViews
