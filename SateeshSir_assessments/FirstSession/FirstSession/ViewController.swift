@@ -23,13 +23,14 @@ class ViewController: UIViewController {
         
 //      MARK: - (i)
         let person1 = Person(name: "Charles", age: 30, id: "SF24")
+        let per5 = person1
         _ = Person(name: "Max", age: 30, id: "RB20")
         _ = Person(name: "Carlos", age: 28, id: "SF24")
         let person4 = Person(name: "Charles", age: 30, id: "SF24")
         print("Hello")
         if(person1 === person4) {
             print("Both p1 and p4 objects are equal")
-        } else if(person1 === person1) {
+        } else if(per5 === person1) {
             print("Both p1 are equal")
         }
         
@@ -109,8 +110,11 @@ class ViewController: UIViewController {
                 self.showAlertWithNumbers(title: "Integer Numbers", numbers: self.getIntegerNumbers(upTo: 30))
             }))
             
-            actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-            
+            actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { action in
+                let secondAlert = UIAlertController(title: "Select any option", message: "Prime, Composite, Integers", preferredStyle: .alert)
+                secondAlert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+                self.present(secondAlert, animated: true, completion: nil)
+            }))
             present(actionSheet, animated: true, completion: nil)
         }
         

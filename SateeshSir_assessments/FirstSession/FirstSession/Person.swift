@@ -7,7 +7,11 @@
 
 import Foundation
 
-class Person {
+class Person: Equatable {
+    static func == (lhs: Person, rhs: Person) -> Bool {
+        return lhs.name == rhs.name && lhs.age == rhs.age && lhs.id == rhs.id
+    }
+    
     let name: String
     let age: Int
     let id: String

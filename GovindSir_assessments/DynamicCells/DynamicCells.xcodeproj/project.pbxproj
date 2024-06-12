@@ -18,6 +18,7 @@
 		D64C74E32C090CA500A32ACA /* DynamicCellsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64C74E22C090CA500A32ACA /* DynamicCellsTests.swift */; };
 		D64C74ED2C090CA500A32ACA /* DynamicCellsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64C74EC2C090CA500A32ACA /* DynamicCellsUITests.swift */; };
 		D64C74EF2C090CA500A32ACA /* DynamicCellsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64C74EE2C090CA500A32ACA /* DynamicCellsUITestsLaunchTests.swift */; };
+		D66772052C10AC6E00160750 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66772042C10AC6E00160750 /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		D64C74E82C090CA500A32ACA /* DynamicCellsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DynamicCellsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D64C74EC2C090CA500A32ACA /* DynamicCellsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicCellsUITests.swift; sourceTree = "<group>"; };
 		D64C74EE2C090CA500A32ACA /* DynamicCellsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicCellsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D66772042C10AC6E00160750 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				D64C74CB2C090CA400A32ACA /* AppDelegate.swift */,
 				D64C74CD2C090CA400A32ACA /* SceneDelegate.swift */,
 				D64C74CF2C090CA400A32ACA /* ViewController.swift */,
+				D66772042C10AC6E00160750 /* DataModel.swift */,
 				D627A1C32C09AE1E008E65C9 /* CellContent.xib */,
 				D627A1C52C09B1E0008E65C9 /* CellContent.swift */,
 				D64C74D12C090CA400A32ACA /* Main.storyboard */,
@@ -269,6 +272,7 @@
 				D64C74CC2C090CA400A32ACA /* AppDelegate.swift in Sources */,
 				D64C74CE2C090CA400A32ACA /* SceneDelegate.swift in Sources */,
 				D627A1C62C09B1E0008E65C9 /* CellContent.swift in Sources */,
+				D66772052C10AC6E00160750 /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

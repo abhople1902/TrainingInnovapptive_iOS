@@ -39,4 +39,4 @@ class TaskHandler: TaskDelegate {
 let taskHandler = TaskHandler()
 let task = Task(delegate: taskHandler)
 
-//task.delegate.taskDidComplete()
+task.delegate.taskDidComplete()

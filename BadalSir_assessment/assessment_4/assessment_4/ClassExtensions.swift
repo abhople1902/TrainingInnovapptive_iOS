@@ -23,5 +23,5 @@ extension Circle {
     }
 }
 
-//let circle1 = Circle(radius: 5)
-//print(circle1.area)
+let circle1 = Circle(radius: 5)
+print(circle1.area)

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D65EB21E2C0DCAFE00D04BAF /* MoveToEarth.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65EB21D2C0DCAFE00D04BAF /* MoveToEarth.swift */; };
+		D65EB2202C0DCB0D00D04BAF /* MoveToAnother.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65EB21F2C0DCB0D00D04BAF /* MoveToAnother.swift */; };
+		D66771FF2C106F6F00160750 /* DataDelegateSkipOneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66771FE2C106F6F00160750 /* DataDelegateSkipOneController.swift */; };
+		D66772012C10711200160750 /* MoveToVenus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66772002C10711200160750 /* MoveToVenus.swift */; };
 		D6C468292C087C6B00080611 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C468282C087C6B00080611 /* AppDelegate.swift */; };
 		D6C4682B2C087C6B00080611 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C4682A2C087C6B00080611 /* SceneDelegate.swift */; };
 		D6C4682D2C087C6B00080611 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C4682C2C087C6B00080611 /* ViewController.swift */; };
@@ -15,9 +19,14 @@
 		D6C468352C087C6D00080611 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D6C468342C087C6D00080611 /* Base */; };
 		D6C4683D2C087F0100080611 /* EarthView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6C4683C2C087F0100080611 /* EarthView.xib */; };
 		D6C4683F2C08BA5C00080611 /* EarthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C4683E2C08BA5C00080611 /* EarthView.swift */; };
+		D6F319C92C0F3D9C00B1518D /* DataDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F319C82C0F3D9C00B1518D /* DataDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D65EB21D2C0DCAFE00D04BAF /* MoveToEarth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveToEarth.swift; sourceTree = "<group>"; };
+		D65EB21F2C0DCB0D00D04BAF /* MoveToAnother.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveToAnother.swift; sourceTree = "<group>"; };
+		D66771FE2C106F6F00160750 /* DataDelegateSkipOneController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDelegateSkipOneController.swift; sourceTree = "<group>"; };
+		D66772002C10711200160750 /* MoveToVenus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveToVenus.swift; sourceTree = "<group>"; };
 		D6C468252C087C6B00080611 /* Second_session.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Second_session.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6C468282C087C6B00080611 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6C4682A2C087C6B00080611 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +37,7 @@
 		D6C468362C087C6D00080611 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6C4683C2C087F0100080611 /* EarthView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EarthView.xib; sourceTree = "<group>"; };
 		D6C4683E2C08BA5C00080611 /* EarthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthView.swift; sourceTree = "<group>"; };
+		D6F319C82C0F3D9C00B1518D /* DataDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,12 +73,17 @@
 				D6C468282C087C6B00080611 /* AppDelegate.swift */,
 				D6C4682A2C087C6B00080611 /* SceneDelegate.swift */,
 				D6C4682C2C087C6B00080611 /* ViewController.swift */,
+				D66772002C10711200160750 /* MoveToVenus.swift */,
 				D6C4683E2C08BA5C00080611 /* EarthView.swift */,
 				D6C4683C2C087F0100080611 /* EarthView.xib */,
 				D6C4682E2C087C6B00080611 /* Main.storyboard */,
+				D65EB21D2C0DCAFE00D04BAF /* MoveToEarth.swift */,
+				D65EB21F2C0DCB0D00D04BAF /* MoveToAnother.swift */,
 				D6C468312C087C6D00080611 /* Assets.xcassets */,
 				D6C468332C087C6D00080611 /* LaunchScreen.storyboard */,
 				D6C468362C087C6D00080611 /* Info.plist */,
+				D6F319C82C0F3D9C00B1518D /* DataDelegate.swift */,
+				D66771FE2C106F6F00160750 /* DataDelegateSkipOneController.swift */,
 			);
 			path = Second_session;
 			sourceTree = "<group>";
@@ -145,9 +160,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D66771FF2C106F6F00160750 /* DataDelegateSkipOneController.swift in Sources */,
 				D6C4682D2C087C6B00080611 /* ViewController.swift in Sources */,
+				D65EB2202C0DCB0D00D04BAF /* MoveToAnother.swift in Sources */,
 				D6C4683F2C08BA5C00080611 /* EarthView.swift in Sources */,
+				D66772012C10711200160750 /* MoveToVenus.swift in Sources */,
 				D6C468292C087C6B00080611 /* AppDelegate.swift in Sources */,
+				D6F319C92C0F3D9C00B1518D /* DataDelegate.swift in Sources */,
+				D65EB21E2C0DCAFE00D04BAF /* MoveToEarth.swift in Sources */,
 				D6C4682B2C087C6B00080611 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

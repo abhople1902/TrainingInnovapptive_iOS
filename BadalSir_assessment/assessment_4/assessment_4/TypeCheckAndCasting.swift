@@ -37,5 +37,5 @@ func describeVehicles(vehicles : [Vehicle]) {
     }
 }
 
-//let anObj: Vehicle = Car()
-//describeVehicles(vehicles: [Car(), Bike(), anObj, Car()])
+let anObj: Vehicle = Car()
+describeVehicles(vehicles: [Car(), Bike(), anObj, Car()])

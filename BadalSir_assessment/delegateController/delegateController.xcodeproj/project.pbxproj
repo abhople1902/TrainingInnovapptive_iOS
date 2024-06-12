@@ -16,6 +16,7 @@
 		D6B6CFE52C0C87F1002EBD58 /* delegateControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B6CFE42C0C87F1002EBD58 /* delegateControllerTests.swift */; };
 		D6B6CFEF2C0C87F1002EBD58 /* delegateControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B6CFEE2C0C87F1002EBD58 /* delegateControllerUITests.swift */; };
 		D6B6CFF12C0C87F1002EBD58 /* delegateControllerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B6CFF02C0C87F1002EBD58 /* delegateControllerUITestsLaunchTests.swift */; };
+		D6B6CFFE2C0CF3F9002EBD58 /* DestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B6CFFD2C0CF3F9002EBD58 /* DestinationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		D6B6CFEA2C0C87F1002EBD58 /* delegateControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = delegateControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6B6CFEE2C0C87F1002EBD58 /* delegateControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = delegateControllerUITests.swift; sourceTree = "<group>"; };
 		D6B6CFF02C0C87F1002EBD58 /* delegateControllerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = delegateControllerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D6B6CFFD2C0CF3F9002EBD58 /* DestinationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				D6B6CFCF2C0C87F0002EBD58 /* SceneDelegate.swift */,
 				D6B6CFD12C0C87F0002EBD58 /* ViewController.swift */,
 				D6B6CFD32C0C87F0002EBD58 /* Main.storyboard */,
+				D6B6CFFD2C0CF3F9002EBD58 /* DestinationViewController.swift */,
 				D6B6CFD62C0C87F1002EBD58 /* Assets.xcassets */,
 				D6B6CFD82C0C87F1002EBD58 /* LaunchScreen.storyboard */,
 				D6B6CFDB2C0C87F1002EBD58 /* Info.plist */,
@@ -261,6 +264,7 @@
 				D6B6CFD22C0C87F0002EBD58 /* ViewController.swift in Sources */,
 				D6B6CFCE2C0C87F0002EBD58 /* AppDelegate.swift in Sources */,
 				D6B6CFD02C0C87F0002EBD58 /* SceneDelegate.swift in Sources */,
+				D6B6CFFE2C0CF3F9002EBD58 /* DestinationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

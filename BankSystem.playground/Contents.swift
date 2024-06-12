@@ -19,9 +19,9 @@ class BankAccount {
         self.initialBalance = initialBalance
     }
     
-    deinit {
-        print("Bank account closed")
-    }
+//    deinit {
+//        print("Bank account closed")
+//    }
     
     func deposit(amount: Double) {
         self.balance += amount
@@ -30,6 +30,8 @@ class BankAccount {
     func withdraw(amount: Double) {
         self.balance -= amount
     }
+    
+//    static func
 }
 
 
@@ -52,6 +54,10 @@ class SavingsAccount: BankAccount {
     init(accountNumber: String, initialBalance: Double, interestRate: Double) {
         self.interestRate = interestRate
         super.init(accountNumber: accountNumber, initialBalance: initialBalance)
+    }
+    
+    deinit {
+        print("Savings account closed")
     }
     
     func applyInterest() {
@@ -122,3 +128,4 @@ savingsAcc.withdraw(amount: 200)
 let currentAcc = CurrentAccount(overdraftLimit: 3000, accountNumber: "SF24", initialBalance: 5000)
 print("Initial balance of current account with overdraft limit is: \(currentAcc.balance)")
 currentAcc.withdraw(amount: 10000)
+

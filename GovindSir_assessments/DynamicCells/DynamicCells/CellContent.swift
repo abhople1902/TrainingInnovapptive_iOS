@@ -9,7 +9,6 @@ import Foundation
 import UIKit
 
 class CellContent: UITableViewCell {
-    @IBOutlet weak var imageViewScuderia: UIImageView!
     
     @IBOutlet weak var textView: UITextView!
     

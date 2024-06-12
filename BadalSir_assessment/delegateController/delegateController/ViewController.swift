@@ -7,11 +7,21 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, DataDelegate {
+    func sendData(data: String) {
+        print(data)
+    }
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        if let destinationVC = storyboard?.instantiateViewController(withIdentifier: "DestinationViewController") as? DestinationViewController {
+            destinationVC.delegate = self
+            navigationController?.pushViewController(destinationVC, animated: true)
+        }
+        
     }
 
 

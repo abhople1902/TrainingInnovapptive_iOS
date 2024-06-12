@@ -14,12 +14,13 @@ class ViewController: UIViewController {
     let mainArr:[[UIColor]] = [[.red, .orange],[.yellow, .brown],[.black]]
     
     let carText = "SF90 Stradale XX"
+    let imageArr: [Any] = ["SF90 Stradale XX", #imageLiteral(resourceName: "SF90Stradale")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
 //        tableView.register(CellContent.self, forCellReuseIdentifier: "CellContent")
-        tableView.register(UINib(nibName: "CellContent", bundle: nil), forCellReuseIdentifier: "cellContent")
+//        tableView.register(UINib(nibName: "CellContent", bundle: nil), forCellReuseIdentifier: "cellContent")
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -47,11 +48,7 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellContent", for: indexPath)
-        
-//        let cellContent = CellContent()
-//        
-//        cell.addSubview(cellContent)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "primaryCellTypeOne", for: indexPath)
         
         
         

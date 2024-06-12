@@ -34,10 +34,10 @@ class Dummy {
     }
 }
 
-//let dummyInstance = Dummy()
-//
-//let sampleArray = SampleArrayOfAnyType(arr1: [95014, "Cupertino", dummyInstance])
-//
-//sampleArray.describeElements(elements: sampleArray.arr1)
+let dummyInstance = Dummy()
+
+let sampleArray = SampleArrayOfAnyType(arr1: [95014, "Cupertino", dummyInstance])
+
+sampleArray.describeElements(elements: sampleArray.arr1)
 
 

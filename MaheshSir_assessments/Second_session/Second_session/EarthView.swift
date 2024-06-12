@@ -7,8 +7,21 @@
 
 import UIKit
 
-class EarthView: UIView {
+protocol ButtonTapDelegate: AnyObject {
+    func moveToEarthTapped()
+    func moveAnotherTapped()
+}
 
+class EarthView: UIView {
+    @IBOutlet weak var MoveToAnother: UIButton!
+    
+    @IBOutlet weak var MoveToEarth: UIButton!
+    
+    weak var delegate: ButtonTapDelegate?
+
+    
+
+    
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.

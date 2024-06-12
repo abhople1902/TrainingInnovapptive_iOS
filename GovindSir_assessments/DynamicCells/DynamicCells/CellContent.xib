@@ -25,10 +25,6 @@
                     <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="39"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SF90Stradale" translatesAutoresizingMaskIntoConstraints="NO" id="KHX-9i-PEI">
-                    <rect key="frame" x="14" y="0.0" width="423" height="184"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -40,14 +36,12 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="imageViewScuderia" destination="KHX-9i-PEI" id="ai9-ss-WJT"/>
                 <outlet property="textView" destination="ojQ-PQ-Lh0" id="Zln-u3-aov"/>
             </connections>
             <point key="canvasLocation" x="-7.6335877862595414" y="-176.05633802816902"/>
         </view>
     </objects>
     <resources>
-        <image name="SF90Stradale" width="310" height="206.66667175292969"/>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

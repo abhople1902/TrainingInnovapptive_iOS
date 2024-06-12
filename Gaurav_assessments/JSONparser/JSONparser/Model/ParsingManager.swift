@@ -37,7 +37,13 @@ struct ParsingManager {
             let ourParse = ParseModel(racerName: rName, racerNumber: rNumber, teamName: tName)
             return ourParse
         } catch {
+            print(error.localizedDescription)
             return nil
         }
     }
 }
+//{
+//"rName": "Max",
+//"tName": "Red Bull",
+//"rNumber": 1
+//}
