@@ -165,10 +165,27 @@ class AddStudentDataViewController: UIViewController, UINavigationControllerDele
     @objc func submitData() {
         var dataModel2 = TableDataSource()
         
+        if (nameTextField.text == "" || genderTextField.text == "" || idTextField.text == "") {
+            let alert = UIAlertController(title: "Invalid form", message: "Fill all the details", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            present(alert, animated: true)
+            return
+        }
         dataModel.name = nameTextField.text ?? "No data entered"
-        dataModel.gender = genderTextField.text ?? "Not defined"
-        dataModel.id = idTextField.text ?? "No id received"
+        guard let xyz = genderTextField.text else {
+            let alert = UIAlertController(title: "Wrong information", message: "Enter gender correctly", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            return
+        }
+        dataModel.id = idTextField.text ?? "No data entered"
         
+        if(xyz == "Male" || xyz == "Female") {
+            dataModel.gender = xyz
+        } else {
+            let alert = UIAlertController(title: "Wrong information", message: "Enter gender correctly", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        }
+                
         TableDataSource.mainArr = dataModel2.addData(dataModel.name, dataModel.gender, image: dataModel.img, date: dataModel.dob, ID: dataModel.id)
         print(TableDataSource.mainArr)
     }
