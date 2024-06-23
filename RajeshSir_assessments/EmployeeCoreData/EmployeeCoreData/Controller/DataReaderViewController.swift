@@ -20,9 +20,9 @@ class DataReaderViewController: UIViewController {
         setUpUI()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        employeeTableView.reloadData()
-    }
+//    override func viewDidAppear(_ animated: Bool) {
+//        employeeTableView.reloadData()
+//    }
     
     override func viewWillAppear(_ animated: Bool) {
         prepareData()
@@ -41,7 +41,7 @@ class DataReaderViewController: UIViewController {
         do {
             let employees = try context.fetch(request)
             for emp in employees{
-                let x = Data(name: emp.name ?? "No name", age: emp.age, id: emp.id)
+                let x = Data(name: emp.name ?? "No Name", age: emp.age, id: emp.id)
                 employeeDataArray.append(x)
             }
         } catch {
@@ -138,8 +138,8 @@ extension DataReaderViewController: UITableViewDelegate {
             }
             
             var model1 = EmployeeModel()
-            let alert = UIAlertController(title: "New data", message: "", preferredStyle: .alert)
-            let action = UIAlertAction(title: "Add Item", style: .default) { action in
+            let alert = UIAlertController(title: "Update data", message: "", preferredStyle: .alert)
+            let action = UIAlertAction(title: "Update Item", style: .default) { action in
                 
                 model1.storeData(nameTextField.text ?? "No data entered", Int64(idTextField.text!) ?? 0, Int64(ageTextField.text!) ?? 0)
                 

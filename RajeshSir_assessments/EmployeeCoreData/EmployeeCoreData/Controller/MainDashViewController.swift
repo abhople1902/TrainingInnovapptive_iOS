@@ -24,15 +24,41 @@ class MainDashViewController: UIViewController {
     
 
     @IBAction func createData(_ sender: UIButton) {
-        var model = EmployeeModel()
-        model.storeData("Charles Leclerc", 24, 29)
+        var nameTextField = UITextField()
+        var ageTextField = UITextField()
+        var idTextField = UITextField()
+        
         let newEmployee = Employee(context: self.context)
-        newEmployee.name = model.getName()
-        newEmployee.id = model.getID()
-        newEmployee.age = model.getAge()
+        
+        var model1 = EmployeeModel()
+        let alert = UIAlertController(title: "New data", message: "", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Add Item", style: .default) { action in
+            model1.storeData(nameTextField.text ?? "No data entered", Int64(idTextField.text!) ?? 0, Int64(ageTextField.text!) ?? 0)
+            
+            newEmployee.name = model1.getName()
+            newEmployee.id = model1.getID()
+            newEmployee.age = model1.getAge()
+        }
+        alert.addTextField { alertTextField in
+            alertTextField.placeholder = "Enter name"
+            nameTextField = alertTextField
+        }
+        alert.addTextField { alertTextField in
+            alertTextField.placeholder = "Enter age"
+            ageTextField = alertTextField
+        }
+        alert.addTextField { alertTextField in
+            alertTextField.placeholder = "Enter id"
+            idTextField = alertTextField
+        }
+        alert.addAction(action)
+        present(alert, animated: true)
+        
+        
         
         do {
             try context.save()
+            print("Hello")
             let alert = UIAlertController(title: "Data saved", message: "Data saved in core data", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
             present(alert, animated: true)
