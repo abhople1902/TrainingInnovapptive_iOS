@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Core_location" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgK-uK-9oV">
+                                <rect key="frame" x="125" y="635" width="143" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Get my location"/>
+                                <connections>
+                                    <action selector="getLocationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DsL-Hg-wrM"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sr9-Ci-oBi">
+                                <rect key="frame" x="125" y="133" width="252" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wym-wc-uqG">
+                                <rect key="frame" x="16" y="140" width="72" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fBK-lv-c57">
+                                <rect key="frame" x="124" y="198" width="146" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Get coordinates"/>
+                                <connections>
+                                    <action selector="getCoordinates:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hfD-50-RLY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coordinates :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URR-c9-jVG">
+                                <rect key="frame" x="15" y="366" width="102" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rez-PT-wEW">
+                                <rect key="frame" x="137" y="359" width="240" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0AO-CX-JRK">
+                                <rect key="frame" x="138" y="427" width="117" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Get address"/>
+                                <connections>
+                                    <action selector="getAddress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JBP-gR-fKk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0AO-CX-JRK" firstAttribute="top" secondItem="rez-PT-wEW" secondAttribute="bottom" constant="34" id="23w-IX-z5z"/>
+                            <constraint firstItem="hgK-uK-9oV" firstAttribute="top" secondItem="Sr9-Ci-oBi" secondAttribute="bottom" constant="468" id="4fk-j6-UNL"/>
+                            <constraint firstItem="Sr9-Ci-oBi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="74" id="61E-TD-Hda"/>
+                            <constraint firstItem="hgK-uK-9oV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="125" id="7N3-JS-nsL"/>
+                            <constraint firstItem="hgK-uK-9oV" firstAttribute="top" secondItem="0AO-CX-JRK" secondAttribute="bottom" constant="173" id="89h-2p-YZu"/>
+                            <constraint firstItem="hgK-uK-9oV" firstAttribute="top" secondItem="fBK-lv-c57" secondAttribute="bottom" constant="402" id="ABn-Au-CN9"/>
+                            <constraint firstItem="Wym-wc-uqG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="81" id="DBy-va-E6S"/>
+                            <constraint firstItem="URR-c9-jVG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="DH8-tm-BDU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hgK-uK-9oV" secondAttribute="trailing" constant="125" id="Dre-rT-OqS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Sr9-Ci-oBi" secondAttribute="trailing" constant="16" id="Esb-XN-eqo"/>
+                            <constraint firstItem="Wym-wc-uqG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="H2R-7Y-jIG"/>
+                            <constraint firstItem="rez-PT-wEW" firstAttribute="top" secondItem="fBK-lv-c57" secondAttribute="bottom" constant="126" id="VN4-62-UVN"/>
+                            <constraint firstItem="fBK-lv-c57" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="124" id="YA0-LH-gvG"/>
+                            <constraint firstItem="hgK-uK-9oV" firstAttribute="top" secondItem="rez-PT-wEW" secondAttribute="bottom" constant="242" id="alm-R6-zPx"/>
+                            <constraint firstAttribute="bottom" secondItem="hgK-uK-9oV" secondAttribute="bottom" constant="182" id="bLe-Ej-2bY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fBK-lv-c57" secondAttribute="trailing" constant="123" id="eol-On-nbu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rez-PT-wEW" secondAttribute="trailing" constant="16" id="ezA-Rn-FG9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0AO-CX-JRK" secondAttribute="trailing" constant="138" id="fMq-ii-Y1z"/>
+                            <constraint firstItem="Sr9-Ci-oBi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="125" id="fXF-IX-R7Z"/>
+                            <constraint firstItem="fBK-lv-c57" firstAttribute="top" secondItem="Sr9-Ci-oBi" secondAttribute="bottom" constant="31" id="g1o-8j-Sud"/>
+                            <constraint firstItem="Sr9-Ci-oBi" firstAttribute="leading" secondItem="Wym-wc-uqG" secondAttribute="trailing" constant="37" id="k7a-EK-lVA"/>
+                            <constraint firstItem="hgK-uK-9oV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="635" id="lEs-pp-CPP"/>
+                            <constraint firstItem="URR-c9-jVG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="307" id="lba-uR-T1o"/>
+                            <constraint firstItem="rez-PT-wEW" firstAttribute="leading" secondItem="URR-c9-jVG" secondAttribute="trailing" constant="20" id="r4i-T3-wkn"/>
+                            <constraint firstItem="0AO-CX-JRK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="138" id="yI6-0H-RRr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addressTextField" destination="Sr9-Ci-oBi" id="aDc-sY-5Rn"/>
+                        <outlet property="coordinatesTextField" destination="rez-PT-wEW" id="dfN-l2-zzs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="41.984732824427482" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
