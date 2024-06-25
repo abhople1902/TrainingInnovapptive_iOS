@@ -23,8 +23,10 @@ struct APIManager {
     
     func performRequest(with urlstring: String) {
         if let url = URL(string: urlstring) {
+            var request = URLRequest(url: url)
+            request.httpMethod = "GET"
             let session = URLSession(configuration: .default)
-            let task = session.dataTask(with: url) { (data, response, error) in
+            let task = session.dataTask(with: request) { (data, response, error) in
                 if error != nil {
                     self.delegate?.failedWithError(error: error!)
                     return

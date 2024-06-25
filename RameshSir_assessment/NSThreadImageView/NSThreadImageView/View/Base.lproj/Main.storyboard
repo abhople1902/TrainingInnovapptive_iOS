@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NSThreadImageView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="B3n-du-bHg">
+                                <rect key="frame" x="16" y="98" width="361" height="432"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hys-hc-euC">
+                                <rect key="frame" x="138" y="630" width="118" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Fetch Image"/>
+                                <connections>
+                                    <action selector="fetchImagePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2bb-mG-roq"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter link to image here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="prf-FG-1Pf">
+                                <rect key="frame" x="32" y="565" width="328" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It takes in seconds :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sp3-c6-15n">
+                                <rect key="frame" x="32" y="69" width="150.66666666666666" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqs-g8-YfP">
+                                <rect key="frame" x="214" y="69" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iiv-x0-iM9">
+                                <rect key="frame" x="119" y="736" width="155" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Stop speed timer"/>
+                                <connections>
+                                    <action selector="stopSpeedTimerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ynv-m6-Eve"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="bqs-g8-YfP" secondAttribute="trailing" constant="137" id="2PF-7N-e6a"/>
+                            <constraint firstItem="B3n-du-bHg" firstAttribute="top" secondItem="sp3-c6-15n" secondAttribute="bottom" constant="8" id="33C-n7-EOF"/>
+                            <constraint firstItem="Hys-hc-euC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="138" id="4FZ-ct-iAd"/>
+                            <constraint firstItem="Hys-hc-euC" firstAttribute="top" secondItem="B3n-du-bHg" secondAttribute="bottom" constant="100" id="4QZ-bL-ftg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="prf-FG-1Pf" secondAttribute="trailing" constant="33" id="4xB-yz-F8r"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iiv-x0-iM9" secondAttribute="trailing" constant="119" id="7SV-x4-QwV"/>
+                            <constraint firstItem="B3n-du-bHg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="9NR-tb-oeS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iiv-x0-iM9" secondAttribute="bottom" constant="47" id="CE0-Mb-yqE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B3n-du-bHg" secondAttribute="trailing" constant="16" id="HVC-PN-yp5"/>
+                            <constraint firstItem="bqs-g8-YfP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="ICC-UA-qFf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="sp3-c6-15n" secondAttribute="trailing" constant="210.33000000000001" id="IEh-sO-TFA"/>
+                            <constraint firstItem="prf-FG-1Pf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="LI3-U4-I0d"/>
+                            <constraint firstItem="iiv-x0-iM9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="119" id="MC2-U6-sUc"/>
+                            <constraint firstItem="iiv-x0-iM9" firstAttribute="top" secondItem="Hys-hc-euC" secondAttribute="bottom" constant="71" id="Ne8-FM-LbP"/>
+                            <constraint firstItem="prf-FG-1Pf" firstAttribute="top" secondItem="B3n-du-bHg" secondAttribute="bottom" constant="35" id="O08-6c-E2R"/>
+                            <constraint firstItem="B3n-du-bHg" firstAttribute="top" secondItem="bqs-g8-YfP" secondAttribute="bottom" constant="8" id="RcF-dh-bNj"/>
+                            <constraint firstItem="Hys-hc-euC" firstAttribute="top" secondItem="prf-FG-1Pf" secondAttribute="bottom" constant="31" id="X9t-gN-xmK"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="B3n-du-bHg" secondAttribute="bottom" constant="288" id="eE5-Yd-qVd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Hys-hc-euC" secondAttribute="bottom" constant="153" id="ePM-8R-qLz"/>
+                            <constraint firstItem="bqs-g8-YfP" firstAttribute="leading" secondItem="sp3-c6-15n" secondAttribute="trailing" constant="31.329999999999998" id="fPS-ed-Kbr"/>
+                            <constraint firstItem="sp3-c6-15n" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="qze-Hw-bac"/>
+                            <constraint firstItem="sp3-c6-15n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="tdg-WI-rmp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Hys-hc-euC" secondAttribute="trailing" constant="137" id="xaW-tx-hhV"/>
+                            <constraint firstItem="B3n-du-bHg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="39" id="yMR-hu-d4j"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageFetchedView" destination="B3n-du-bHg" id="cHW-ub-RNb"/>
+                        <outlet property="linkTextField" destination="prf-FG-1Pf" id="vpK-kX-CaZ"/>
+                        <outlet property="speedLabel" destination="bqs-g8-YfP" id="2ID-Pl-GCB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="43.511450381679388" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+</document>
