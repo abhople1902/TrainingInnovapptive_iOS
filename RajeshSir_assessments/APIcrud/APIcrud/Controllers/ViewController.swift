@@ -19,6 +19,18 @@ class ViewController: UIViewController {
     @IBAction func getProductInfo(_ sender: UIButton) {
         apiManager.fetchData()
     }
+    
+    @IBAction func putProductInfo(_ sender: UIButton) {
+        apiManager.putData()
+    }
+    
+    @IBAction func postProductInfo(_ sender: UIButton) {
+        apiManager.postData()
+    }
+    
+    @IBAction func deleteProductInfo(_ sender: UIButton) {
+    }
+
 }
 
 

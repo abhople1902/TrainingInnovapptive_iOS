@@ -24,14 +24,47 @@
                                     <action selector="getProductInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IAZ-6h-3o8"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nOT-ok-nh3">
+                                <rect key="frame" x="139" y="354" width="114" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="PUT"/>
+                                <connections>
+                                    <action selector="putProductInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BmW-L1-GY7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hn-Xr-eXi">
+                                <rect key="frame" x="139" y="475" width="114" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="POST"/>
+                                <connections>
+                                    <action selector="postProductInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Ed-oW-jwP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOq-al-xLM">
+                                <rect key="frame" x="139" y="598" width="114" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="DELETE"/>
+                                <connections>
+                                    <action selector="deleteProductInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lvL-ZC-AzC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="dOq-al-xLM" firstAttribute="top" secondItem="3hn-Xr-eXi" secondAttribute="bottom" constant="88" id="0DO-DV-QfK"/>
+                            <constraint firstItem="3hn-Xr-eXi" firstAttribute="top" secondItem="nOT-ok-nh3" secondAttribute="bottom" constant="86" id="21J-WT-fyV"/>
                             <constraint firstItem="aK1-Kq-zPi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="173" id="2BR-Ka-iFI"/>
+                            <constraint firstItem="nOT-ok-nh3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="139" id="3Uv-Qy-6Re"/>
+                            <constraint firstItem="dOq-al-xLM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="139" id="8Rt-Pc-Jtq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aK1-Kq-zPi" secondAttribute="trailing" constant="140" id="8wv-7e-Kot"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aK1-Kq-zPi" secondAttribute="bottom" constant="551" id="HaA-vh-Vfq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dOq-al-xLM" secondAttribute="bottom" constant="185" id="Iz3-Mp-lbu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nOT-ok-nh3" secondAttribute="trailing" constant="140" id="JxV-OD-1cg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3hn-Xr-eXi" secondAttribute="trailing" constant="140" id="NAl-cK-2rx"/>
                             <constraint firstItem="aK1-Kq-zPi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="139" id="Xlo-1A-LxK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dOq-al-xLM" secondAttribute="trailing" constant="140" id="r0N-yf-eei"/>
+                            <constraint firstItem="3hn-Xr-eXi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="139" id="u29-Al-gyA"/>
                         </constraints>
                     </view>
                 </viewController>
