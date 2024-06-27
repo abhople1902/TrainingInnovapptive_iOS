@@ -38,8 +38,8 @@ struct ParsingManager {
             return ourParse
         } catch {
             print(error.localizedDescription)
-            return nil
         }
+        return ParseModel(racerName: "No data", racerNumber: 0, teamName: "No data")
     }
 }
 //{

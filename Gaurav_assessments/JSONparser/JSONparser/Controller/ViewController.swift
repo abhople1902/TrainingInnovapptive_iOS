@@ -40,8 +40,12 @@ extension ViewController: UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         if let json = jsonTextField.text {
-            parsingManager.performParsing(with: json)
+            parser(json)
         }
+    }
+    
+    func parser(_ json: String) {
+        parsingManager.performParsing(with: json)
     }
 }
 

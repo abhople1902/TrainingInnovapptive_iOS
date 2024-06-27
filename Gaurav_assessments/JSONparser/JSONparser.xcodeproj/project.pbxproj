@@ -16,6 +16,7 @@
 		D627A1EB2C0A04F1008E65C9 /* JSONparserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D627A1EA2C0A04F1008E65C9 /* JSONparserTests.swift */; };
 		D627A1F52C0A04F1008E65C9 /* JSONparserUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D627A1F42C0A04F1008E65C9 /* JSONparserUITests.swift */; };
 		D627A1F72C0A04F1008E65C9 /* JSONparserUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D627A1F62C0A04F1008E65C9 /* JSONparserUITestsLaunchTests.swift */; };
+		D64480B22C2D37A200B176C1 /* ParsingManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64480B12C2D37A200B176C1 /* ParsingManagerTests.swift */; };
 		D6F66CC92C0B3FFF00F4D0FF /* ParseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F66CC82C0B3FFF00F4D0FF /* ParseModel.swift */; };
 		D6F66CCB2C0B426A00F4D0FF /* ParseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F66CCA2C0B426A00F4D0FF /* ParseData.swift */; };
 		D6F66CCD2C0B445C00F4D0FF /* ParsingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F66CCC2C0B445C00F4D0FF /* ParsingManager.swift */; };
@@ -52,6 +53,7 @@
 		D627A1F02C0A04F1008E65C9 /* JSONparserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSONparserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D627A1F42C0A04F1008E65C9 /* JSONparserUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONparserUITests.swift; sourceTree = "<group>"; };
 		D627A1F62C0A04F1008E65C9 /* JSONparserUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONparserUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D64480B12C2D37A200B176C1 /* ParsingManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsingManagerTests.swift; sourceTree = "<group>"; };
 		D6F66CC82C0B3FFF00F4D0FF /* ParseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseModel.swift; sourceTree = "<group>"; };
 		D6F66CCA2C0B426A00F4D0FF /* ParseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseData.swift; sourceTree = "<group>"; };
 		D6F66CCC2C0B445C00F4D0FF /* ParsingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsingManager.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				D627A1EA2C0A04F1008E65C9 /* JSONparserTests.swift */,
+				D64480B12C2D37A200B176C1 /* ParsingManagerTests.swift */,
 			);
 			path = JSONparserTests;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D64480B22C2D37A200B176C1 /* ParsingManagerTests.swift in Sources */,
 				D627A1EB2C0A04F1008E65C9 /* JSONparserTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
