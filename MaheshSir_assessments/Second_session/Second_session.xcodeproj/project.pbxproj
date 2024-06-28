@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D64480FA2C2DAC1E00B176C1 /* Second_sessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64480F92C2DAC1E00B176C1 /* Second_sessionTests.swift */; };
 		D65EB21E2C0DCAFE00D04BAF /* MoveToEarth.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65EB21D2C0DCAFE00D04BAF /* MoveToEarth.swift */; };
 		D65EB2202C0DCB0D00D04BAF /* MoveToAnother.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65EB21F2C0DCB0D00D04BAF /* MoveToAnother.swift */; };
 		D66771FF2C106F6F00160750 /* DataDelegateSkipOneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66771FE2C106F6F00160750 /* DataDelegateSkipOneController.swift */; };
@@ -22,7 +23,19 @@
 		D6F319C92C0F3D9C00B1518D /* DataDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F319C82C0F3D9C00B1518D /* DataDelegate.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D64480FB2C2DAC1E00B176C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6C4681D2C087C6B00080611 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6C468242C087C6B00080611;
+			remoteInfo = Second_session;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		D64480F72C2DAC1E00B176C1 /* Second_sessionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Second_sessionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D64480F92C2DAC1E00B176C1 /* Second_sessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Second_sessionTests.swift; sourceTree = "<group>"; };
 		D65EB21D2C0DCAFE00D04BAF /* MoveToEarth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveToEarth.swift; sourceTree = "<group>"; };
 		D65EB21F2C0DCB0D00D04BAF /* MoveToAnother.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveToAnother.swift; sourceTree = "<group>"; };
 		D66771FE2C106F6F00160750 /* DataDelegateSkipOneController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDelegateSkipOneController.swift; sourceTree = "<group>"; };
@@ -41,6 +54,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D64480F42C2DAC1E00B176C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D6C468222C087C6B00080611 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -51,10 +71,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D64480EF2C2DA5C800B176C1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D6C4682C2C087C6B00080611 /* ViewController.swift */,
+				D66772002C10711200160750 /* MoveToVenus.swift */,
+				D65EB21D2C0DCAFE00D04BAF /* MoveToEarth.swift */,
+				D65EB21F2C0DCB0D00D04BAF /* MoveToAnother.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D64480F02C2DA62C00B176C1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D6C4683E2C08BA5C00080611 /* EarthView.swift */,
+				D6C4683C2C087F0100080611 /* EarthView.xib */,
+				D6C4682E2C087C6B00080611 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D64480F22C2DA67A00B176C1 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				D6F319C82C0F3D9C00B1518D /* DataDelegate.swift */,
+				D66771FE2C106F6F00160750 /* DataDelegateSkipOneController.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		D64480F82C2DAC1E00B176C1 /* Second_sessionTests */ = {
+			isa = PBXGroup;
+			children = (
+				D64480F92C2DAC1E00B176C1 /* Second_sessionTests.swift */,
+			);
+			path = Second_sessionTests;
+			sourceTree = "<group>";
+		};
 		D6C4681C2C087C6B00080611 = {
 			isa = PBXGroup;
 			children = (
 				D6C468272C087C6B00080611 /* Second_session */,
+				D64480F82C2DAC1E00B176C1 /* Second_sessionTests */,
 				D6C468262C087C6B00080611 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				D6C468252C087C6B00080611 /* Second_session.app */,
+				D64480F72C2DAC1E00B176C1 /* Second_sessionTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,20 +130,14 @@
 		D6C468272C087C6B00080611 /* Second_session */ = {
 			isa = PBXGroup;
 			children = (
+				D64480F22C2DA67A00B176C1 /* Delegates */,
+				D64480F02C2DA62C00B176C1 /* View */,
+				D64480EF2C2DA5C800B176C1 /* Controllers */,
 				D6C468282C087C6B00080611 /* AppDelegate.swift */,
 				D6C4682A2C087C6B00080611 /* SceneDelegate.swift */,
-				D6C4682C2C087C6B00080611 /* ViewController.swift */,
-				D66772002C10711200160750 /* MoveToVenus.swift */,
-				D6C4683E2C08BA5C00080611 /* EarthView.swift */,
-				D6C4683C2C087F0100080611 /* EarthView.xib */,
-				D6C4682E2C087C6B00080611 /* Main.storyboard */,
-				D65EB21D2C0DCAFE00D04BAF /* MoveToEarth.swift */,
-				D65EB21F2C0DCB0D00D04BAF /* MoveToAnother.swift */,
 				D6C468312C087C6D00080611 /* Assets.xcassets */,
 				D6C468332C087C6D00080611 /* LaunchScreen.storyboard */,
 				D6C468362C087C6D00080611 /* Info.plist */,
-				D6F319C82C0F3D9C00B1518D /* DataDelegate.swift */,
-				D66771FE2C106F6F00160750 /* DataDelegateSkipOneController.swift */,
 			);
 			path = Second_session;
 			sourceTree = "<group>";
@@ -91,6 +145,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D64480F62C2DAC1E00B176C1 /* Second_sessionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D64480FD2C2DAC1E00B176C1 /* Build configuration list for PBXNativeTarget "Second_sessionTests" */;
+			buildPhases = (
+				D64480F32C2DAC1E00B176C1 /* Sources */,
+				D64480F42C2DAC1E00B176C1 /* Frameworks */,
+				D64480F52C2DAC1E00B176C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D64480FC2C2DAC1E00B176C1 /* PBXTargetDependency */,
+			);
+			name = Second_sessionTests;
+			productName = Second_sessionTests;
+			productReference = D64480F72C2DAC1E00B176C1 /* Second_sessionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D6C468242C087C6B00080611 /* Second_session */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D6C468392C087C6D00080611 /* Build configuration list for PBXNativeTarget "Second_session" */;
@@ -118,6 +190,10 @@
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					D64480F62C2DAC1E00B176C1 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = D6C468242C087C6B00080611;
+					};
 					D6C468242C087C6B00080611 = {
 						CreatedOnToolsVersion = 15.4;
 					};
@@ -137,11 +213,19 @@
 			projectRoot = "";
 			targets = (
 				D6C468242C087C6B00080611 /* Second_session */,
+				D64480F62C2DAC1E00B176C1 /* Second_sessionTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D64480F52C2DAC1E00B176C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D6C468232C087C6B00080611 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -156,6 +240,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D64480F32C2DAC1E00B176C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D64480FA2C2DAC1E00B176C1 /* Second_sessionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D6C468212C087C6B00080611 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -173,6 +265,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D64480FC2C2DAC1E00B176C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6C468242C087C6B00080611 /* Second_session */;
+			targetProxy = D64480FB2C2DAC1E00B176C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D6C4682E2C087C6B00080611 /* Main.storyboard */ = {
@@ -194,6 +294,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D64480FE2C2DAC1E00B176C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G4C3VCJCU3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AyushBhople.Second-sessionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Second_session.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Second_session";
+			};
+			name = Debug;
+		};
+		D64480FF2C2DAC1E00B176C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G4C3VCJCU3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AyushBhople.Second-sessionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Second_session.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Second_session";
+			};
+			name = Release;
+		};
 		D6C468372C087C6D00080611 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -372,6 +508,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D64480FD2C2DAC1E00B176C1 /* Build configuration list for PBXNativeTarget "Second_sessionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D64480FE2C2DAC1E00B176C1 /* Debug */,
+				D64480FF2C2DAC1E00B176C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D6C468202C087C6B00080611 /* Build configuration list for PBXProject "Second_session" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
