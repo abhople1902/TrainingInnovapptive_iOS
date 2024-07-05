@@ -14,15 +14,7 @@ struct ParseModel {
     
     var raceWins: Bool {
         switch racerNumber {
-        case 55:
-            return true
-        case 16:
-            return true
-        case 4:
-            return true
-        case 11:
-            return true
-        case 1:
+        case 55, 16, 4 , 11, 1:
             return true
         default:
             return false

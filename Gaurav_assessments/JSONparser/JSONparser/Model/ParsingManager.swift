@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol ParsingManagerDelegate {
+protocol ParsingManagerDelegate: AnyObject {
     func didParseData(_ parsingManager: ParsingManager, parse: ParseModel)
 }
 
@@ -28,6 +28,8 @@ struct ParsingManager {
     
     func parseJSON(_ parseData: Data) -> ParseModel? {
         let decoder = JSONDecoder()
+        let newTuple = ("Ayush", 2, true)
+        let a = newTuple.0
         do {
             let decodedData = try decoder.decode(ParseData.self, from: parseData)
             let rName = decodedData.rName
