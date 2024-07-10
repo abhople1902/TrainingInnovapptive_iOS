@@ -128,4 +128,6 @@ savingsAcc.withdraw(amount: 200)
 let currentAcc = CurrentAccount(overdraftLimit: 3000, accountNumber: "SF24", initialBalance: 5000)
 print("Initial balance of current account with overdraft limit is: \(currentAcc.balance)")
 currentAcc.withdraw(amount: 10000)
+let newTuple = ("Ayush", 1, true)
+print(newTuple.1)
 

@@ -13,4 +13,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
     }
+    
+    @IBAction func loginPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "moveToLogin", sender: self)
+    }
+    
+    @IBAction func signupPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "moveToSignup", sender: self)
+    }
+    
+    
 }
